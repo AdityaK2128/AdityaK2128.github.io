@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 50);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 15px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: green;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 140px 0px;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+            margin-top: 70px;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 40px 0px;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        #element {
+            color: purple;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 1000px;
+        }
+
+        main hr {
+            border: 0;
+            background: red;
+            height: 1.2px;
+            margin: 40px 80px;
+        }
+
+        .projectHeading {
+            font-size: 40px;
+            /* You can adjust the size as needed */
+            margin-bottom: 30px;
+        }
+
+        .column {
+            display: flex;
+            /* Use flexbox to create a flexible container */
+        }
+
+        .box {
+            flex: 1;
+            /* Distribute the available space evenly among the child divs */
+
+            padding: 10px;
+            margin: 5px;
+            height: fit-content;
+        }
+
+        /* Style for the image with the "small-image" class */
+        .small-image {
+            max-width: 1500px;
+            /* Set the maximum width you want */
+            height: auto;
+            /* Maintain the image's aspect ratio */
+        }
+
+        .projectOne {
+            margin-bottom: 50px;
+        }
+
+        .projectOneTitle {
+            color: aqua;
+        }
+
+        .subHeadings {
+            color: brown;
+            padding: 5px;
+        }
+
+        .projectOneDetails {
+            margin-bottom: 50px;
+        }
+        .subHeadings2{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projectsSection">Projects</a></li>
+                 <!--  <li><a href="/">Services</a></li>-->
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Welcome to <span class="purple">Aditya Kumar's</span>
+                <div>Portfolio</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="programmer Image">
+            </div>
+        </section>
+        <section class="secondSection">
+            <hr>
+            <h1 class="projectHeading" id="projectsSection">My Projects </h1>
+
+            <h2 class="projectOneTitle">ToDo List App</h2>
+            <div class="projectOne">This ToDo list App aims to give users the minimal and the simplest experience for
+                the functionality they want from the App</div>
+            <div class="projectOneDetails">
+                <span class="subHeadings">Task Creation:</span> Users can easily add new tasks to the to-do list. This
+                involves providing a title or description for the task. <br>
+
+                <span class="subHeadings">Task Deletion: </span>Users should be able to delete tasks they no longer want
+                on their to-do list. This can be achieved through a delete button or swipe-to-delete gesture.<br>
+
+                <span class="subHeadings">Task Update: </span>Users may want to edit or update the details of a task.
+                This includes changing the task title, adding notes, specifying due dates, or updating task
+                priority.<br>
+
+                <span class="subHeadings">Task Completion:</span> Users should be able to mark tasks as completed. This
+                often involves a checkbox or a "mark as done" button. Completed tasks are usually visually distinguished
+                from unfinished ones.<br>
+
+            </div>
+            <div class="column2">
+                <div class="box2">
+                    <img src="allViews.png" alt="appview1" class="small-image">
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <section class="secondSection">
+            <hr>
+
+
+            <h2 class="projectOneTitle">TicTacToe Game </h2>
+            <div class="projectOne">AI powered TicTacToe Game with 3 Difficulty levels of play</div>
+            <div>
+                <span class="subHeadings">User Interface:</span>A user-friendly interface for the Tic-Tac-Toe board.
+User can make their move by tapping on the board on their turn. Play Again button is also there if user wants to play the Game Again.
+
+<br>
+
+<span class="subHeadings2">Game Logic:</span>
+Whenever the User or the AI gets a pair of 3 same movel in a Straight Line then that user is declared as Winner
+Implement the rules for winning, losing, and drawing.
+Track the game state and determine when it's over.
+<br>
+<span class="subHeadings2">AI Development:</span>
+
+It has opponent for Easy, Medium, and Hard difficulty levels.
+For the Easy level, the AI can make random moves.
+For the Medium level, the AI can make slightly smarter moves, such as blocking the player from winning.
+For the Hard level, implement a more sophisticated AI algorithm, such as the minimax algorithm with alpha-beta pruning.
+<br>
+<span class="subHeadings2">User Interaction:</span>
+
+Allow the user to make their moves by tapping on the board.
+Update the game state and the UI after each move.
+<br>
+<span class="subHeadings2">Alert Popups:</span>
+
+Show alert popups when the game ends (win, lose, or draw).
+Customize the alerts to display the result and options to play again or exit the game.
+<br>
+<br>
+<br>
+
+            </div>
+            <div class="column2">
+                <div class="box2">
+                    <img src="tictactoeLight.png" alt="appview1" class="small-image">
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+ 
+
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'iOS App Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
